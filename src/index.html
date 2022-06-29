@@ -1,14 +1,40 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Tarjeta de crédito válida</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Redressed&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header><h1> &#128179 Tarjeta de crédito válida &#9989</h1></header>
+    <main>
+        <div class="card">
+          <img class="logo" src="./logo.png" alt="logo scotia">
+          <div class="card-reader">
+            <img class="reader" src="./card-reader.png" alt="reader tarjeta">
+            <img class="visa" src="./visa.png" alt="visa">
+            <div class="front">
+              <p class="card-number">1234 5678 9123 4567</p>
+              <img class="name-date" src="./nombre-fecha.png" alt="nombre-fecha">
+            </div>
+          </div>
+        </div>
+        <div class="ingresar">
+          <p>Ingresa el número de tarjeta que quieres validar</p>
+          <input class="input" type="text" placeholder="Ingrese el número de tarjeta">
+        </div>
+        <div class="validar">
+          <button class="boton">Validar!!!</button>
+        </div>
+    
+      
+    </main>
+    <footer><h4> &#128105;&#127995 Consuelo Gómez - SCL021 &#128421 </h4></footer>
+    <script type="module" src="./index.js" ></script>
   </body>
-</html>
+  </html>

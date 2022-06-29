@@ -1,0 +1,96 @@
+body{
+background-color: #FDEBD0;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Redressed', cursive;
+font-family: 'Satisfy', cursive;
+}
+
+header{
+    text-align: center;
+    background-color:#0F0A9C;
+    color: white;
+    font-size: 22px;
+}
+
+footer{
+    text-align: center;
+    background-color: darkmagenta;
+    color: white;
+    font-size: 20px;
+}
+
+
+.logo{
+    max-width: 180px;
+    height: 40px;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.reader{
+    max-width: 90px;
+    height: 35px;
+    margin-top:16px;
+    margin-left: 20px;
+}
+
+.visa{
+    max-width: 90px;
+    height: 40px;
+    margin-top:50px;
+    margin-left: 270px;
+}
+
+.card{
+    height: 222px;
+    width: 350px;
+    background-color:black;
+    margin: 10px auto;
+    position: relative;
+    border-radius: 25px;
+}
+
+.card-number{
+    color: white;
+    margin-top: -99px;
+    margin-left: 70px;
+    position: relative;
+    font-size: 30px;
+}
+
+.name-date{
+    position: relative;
+    margin-top: -80px;
+    height: 40px;
+    margin-left:20px
+}
+.ingresar{
+    text-align: center;
+    font-size: 25px;
+}
+.validar{
+    margin-top: 20px;
+    text-align: center;
+}
+.boton{
+  background-color: rgb(80, 10, 172);
+  border-radius: 25px;
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Redressed', cursive;
+  font-family: 'Satisfy', cursive;
+  font-size: 25px;
+  box-sizing: border-box;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  
+}
+.boton:hover {
+  border-color: rgb(250, 250, 4);
+}
+
+.input{
+    width: 300px;
+}
+
+
