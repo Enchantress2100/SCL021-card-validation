@@ -5,3 +5,4 @@ No soy una experta en Figma, digamos que intenté plasmar este prototipo de la m
 <img src="src/figma.png">
 
 Dando este resultado en diseño y apariencia.
+<img src="src/diseño definitivo.png">
