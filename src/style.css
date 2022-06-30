@@ -83,6 +83,7 @@ footer{
   font-size: 25px;
   box-sizing: border-box;
   border: 0.16em solid rgba(255, 255, 255, 0);
+  text-decoration: none;
   
 }
 .boton:hover {
@@ -93,4 +94,8 @@ footer{
     width: 300px;
 }
 
+.valor{
+    text-align: center;
+    color: red;
+}
 

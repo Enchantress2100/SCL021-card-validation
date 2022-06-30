@@ -11,6 +11,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Redressed&family=Satisfy&display=swap" rel="stylesheet">
 </head>
 <body>
+  <script>
+    function showDiv() {
+  document.getElementById("valido").style.display = "block";
+}
+</script>
+
     <header><h1> &#128179 Tarjeta de crédito válida &#9989</h1></header>
     <main>
         <div class="card">
@@ -19,20 +25,21 @@
             <img class="reader" src="./card-reader.png" alt="reader tarjeta">
             <img class="visa" src="./visa.png" alt="visa">
             <div class="front">
-              <p class="card-number">1234 5678 9123 4567</p>
+              <p class="card-number">1234 5678 1234 5678</p>
               <img class="name-date" src="./nombre-fecha.png" alt="nombre-fecha">
             </div>
           </div>
         </div>
         <div class="ingresar">
           <p>Ingresa el número de tarjeta que quieres validar</p>
-          <input class="input" type="text" placeholder="Ingrese el número de tarjeta">
+          <input class="input" id="numeros" type="number" placeholder="Ingrese el número de tarjeta">
         </div>
         <div class="validar">
-          <button class="boton">Validar!!!</button>
+          <a href="#valido"><button class="boton pure-button" type="button" value="submit" onclick="showDiv()">Validar!!!</button></a>
         </div>
-    
-      
+          <div id="valido" class="valor" style="display:none;">
+          <p id="respuesta">Se responderá si la tarjeta es válida o no</p>
+    </div>
     </main>
     <footer><h4> &#128105;&#127995 Consuelo Gómez - SCL021 &#128421 </h4></footer>
     <script type="module" src="./index.js" ></script>
