@@ -12,27 +12,27 @@ const validator = {
     let filterEven = arrayCreditCard.filter((number, index) => {
       return index % 2 === 0;
     });
-    console.log(filterEven);
+    //console.log(filterEven);
     //filtrar buscando las posiciones impares
     let filterUneven = arrayCreditCard.filter((number, index) => {
       return index % 2 !== 0;
     });
-    console.log(filterUneven);
+    //console.log(filterUneven);
     //ejecutar la multiplicacion *2 en las posiciones pares del array, desde 0
     let evenMulti = filterEven.map(function (currentNumber, index) {
       return currentNumber * 2;
     });
-    console.log(evenMulti);
+   //console.log(evenMulti);
 
     //filtrar resultados mayores a 9 de la multiplicacion
     let findValue = evenMulti.filter((i) => i > 9);
-    console.log(findValue);
+    //console.log(findValue);
 
     //estructurar digitos individuales
     let digits = findValue.toString().split("");
     //eliminar los nAn
     let realDigits = digits.map(Number).filter(Number);
-    console.log(realDigits);
+    //console.log(realDigits);
 
     //sumar los digitos entre si
     function sumar(realDigits) {
@@ -40,7 +40,7 @@ const validator = {
       for (let i = 0; i < realDigits.length; i++) {
         suma += parseInt(realDigits[i]);
       }
-      console.log(suma)
+      //console.log(suma)
     }
     sumar(realDigits)
 
@@ -52,14 +52,14 @@ const validator = {
     console.log(arrayEven)
     //agregar filterUneven
     let arrayDef = arrayEven.concat(filterUneven)
-    console.log(arrayDef)
+    //console.log(arrayDef)
     //sumar los digitos
        function sumarFinal(arrayDef) {
          let sumar = 0;
          for (let i = 0; i < arrayDef.length; i++) {
            sumar += parseInt(arrayDef[i]);
          }
-         console.log(sumar);
+         //console.log(sumar);
          return sumar
        }
     //si el numero final es multiplo de 10, la tarjeta es valida.
