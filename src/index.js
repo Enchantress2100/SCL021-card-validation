@@ -15,17 +15,21 @@ recoger.addEventListener('click', pickUp)
 let creditCardNumber = 0; //scope global
 
 function pickUp(event) {
-    event.preventDefault();
-    let numeros = document.getElementById("numeros").value;  //console.log(numeros)
-    creditCardNumber = numeros;  //console.log(creditCardNumber)
-    //asegurar que se estan ingresando 16 numeros
-    if (creditCardNumber.length != 16) {
-      let respuesta = document.getElementById("respuesta");
-      respuesta.innerHTML = "Debes revisar e ingresar los 16 números exactos de tu tarjeta";
-    } else {
-        validator.isValid(creditCardNumber)
-    }
-    console.log(creditCardNumber.length); //comprobar la cantidad de números ingresados.
+  event.preventDefault();
+    let numeros = document.getElementById("numeros").value;
+  //console.log(numeros)
+    creditCardNumber = numeros;
+  //console.log(creditCardNumber)
+  //asegurar que se estan ingresando 16 numeros
+  if (creditCardNumber.length != 16) {
+    let respuesta = document.getElementById("respuesta");
+    respuesta.innerHTML =
+      "Debes revisar e ingresar los 16 números exactos de tu tarjeta";
+  } else {
+    validator.isValid(creditCardNumber);
+  }
+  //comprobar la cantidad de números ingresados.
+  //console.log(creditCardNumber.length);
 }
 
 //mostrar contenido container de respuesta
@@ -33,8 +37,3 @@ let show = document.getElementById('boton')
 show.onclick=function showDiv() {
     document.getElementById("valido").style.display = "block";
 }
-
-
-
-
-
