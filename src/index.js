@@ -16,8 +16,13 @@ let creditCardNumber = 0; //scope global
 
 function pickUp(event) {
   event.preventDefault();
-    let numeros = document.getElementById("numeros").value;
-    //console.log(numeros)
+  let numeros = document.getElementById("numeros").value;
+
+  function replaceNumber(e) {
+    e.value = e.value.replace(/\b(?:\d{4}[ -]?){3}(?=\d{4}\b)/, "#### #### ####");
+  }
+
+    //document.getElementById("demo").innerHTML = "I have changed!";console.log(numeros)
     creditCardNumber = numeros;
     //console.log(creditCardNumber)
     //asegurar que se estan ingresando 16 numeros
@@ -36,8 +41,9 @@ function pickUp(event) {
         //   .map((x, i) => (i > 0 && i % separate == 0 ? "-" + x : x))
         //   .join("");
         //tarjeta.innerHTML=numeros
-        validator.isValid(creditCardNumber);
-        validator.maskify(creditCardNumber);
+      
+      validator.isValid(creditCardNumber);
+      validator.maskify(creditCardNumber);
   }
   //comprobar la cantidad de números ingresados.
   //console.log(creditCardNumber.length);
