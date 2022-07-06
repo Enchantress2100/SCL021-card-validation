@@ -14,3 +14,6 @@ Luego, todos los números se deben sumar entre sí, y si la tarjeta es válida, 
 
 -Este programa se ejecuta ingresando los 16 números de tu tarjeta en el input indicado. Si este input no es correcto (por cantidad de números), se emitirá un mensaje impreso en pantalla pidiendo que revises lo ingresado y coloques exactamente los 16 números.
 <img src="src/numeros no exactos.png">
+
+-Si todo resulta bien, revisará la tarjeta ingresada y la imprimirá dejando visibles sólo los últimos 4 dígitos. Y comprobará si es válida o no.
+<img src="src/tarjeta valida.png">
