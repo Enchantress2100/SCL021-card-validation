@@ -49,7 +49,7 @@ const validator = {
     //evenMulti
     //realDigits
     let arrayEven = evenMulti.concat(realDigits).filter((i) => i < 9);
-    console.log(arrayEven)
+    //console.log(arrayEven)
     //agregar filterUneven
     let arrayDef = arrayEven.concat(filterUneven)
     //console.log(arrayDef)
@@ -71,7 +71,12 @@ const validator = {
       respuesta.innerHTML="La tarjeta de crédito es inválida"
     }
   },
-  maskify(creditCardNumber) {},
+  maskify(creditCardNumber) {
+    let tarjeta = document.getElementById("numeroTarjeta");
+    tarjeta.innerHTML = creditCardNumber.replace(
+      /\b(?:\d{4}[ -]?){3}(?=\d{4}\b)/,"#### #### #### "
+    );
+  },
 };
 
 export default validator;
