@@ -27,7 +27,7 @@ function pickUp(event) {
     // imprimir los numeros en la tarjeta separados cada 4 espacios (si es necesario)
     // ejecutar validacion de todas las que no son AMEX
     // ejecutar funcion maskify
-    if (!creditCardNumber.length||isNaN(creditCardNumber) ) {
+    if (!numeros||isNaN(creditCardNumber) ) {
         let respuesta;
         respuesta = document.getElementById("respuesta");
         respuesta.innerHTML =
