@@ -66,9 +66,9 @@ const validator = {
     let final = sumarFinal(arrayDef)
     
     if ((final % 10) == 0) {
-      respuesta.innerHTML="La tarjeta de crédito es válida"
+      respuesta.innerHTML = "La tarjeta de crédito es válida"
     } else {
-      respuesta.innerHTML="La tarjeta de crédito es inválida"
+      respuesta.innerHTML = "La tarjeta de crédito es inválida"
     }
   },
   maskify(creditCardNumber) {
